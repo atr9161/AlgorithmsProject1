@@ -1,20 +1,19 @@
 package algorithms;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class BSTSort {
+	int currentIndex;
 	
-	public List<Integer> sort(List<Integer> list) {
-	
+	public void sort(List<Integer> list) {	
 		Node tree = null;
 		for(Integer value : list) {
 			Node newNode = new Node(value,null,null);
 			tree = insert(tree,newNode);
 		}
-		ArrayList<Integer> sortedList = new ArrayList<Integer>();
-		traverse(tree,sortedList);
-		return sortedList;
+		
+		currentIndex = 0;
+		traverse(tree,list);
 	}
 	
 	private class Node {
@@ -55,12 +54,13 @@ public class BSTSort {
 		return tree;
 	}
 	
-	private void traverse(Node node, ArrayList<Integer> sortedList) {
+	private void traverse(Node node, List<Integer> sortedList) {
 		if(node == null) {
 			return;
 		}
 		traverse(node.left, sortedList);
-		sortedList.add(node.value);
+		sortedList.set(currentIndex, node.value);
+		currentIndex++;
 		traverse(node.right,sortedList);
 	}
 }
