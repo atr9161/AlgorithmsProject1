@@ -1,0 +1,466 @@
+Java Sort
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 9.16236E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.004792806
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.026436988
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.197707021
+
+Already Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 3.1939E-5
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 7.1924E-5
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 9.45249E-4
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.009788949
+
+Half Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 8.8747E-5
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.001216365
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.007235289
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.11605963
+
+Bubble Sort
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 0.014979895
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.434388686
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 49.706145754
+
+Already Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 0.002675321
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.29468198
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 22.245626303
+
+Half Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 0.003569127
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.451489725
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 43.107157172
+
+BST Sort
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 8.02621E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.001950475
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.018683361
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.42828638
+
+Already Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 7.74583E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.077495804
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 7.72868813
+
+Half Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 4.53973E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.038330988
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 3.876783588
+
+Merge Sort
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 0.00150211
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.012009321
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.072672765
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.383372781
+
+Already Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 1.19955E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.00169667
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.018293022
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.310196305
+
+Half Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 2.24304E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.002928883
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.021882628
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.293910811
+
+Heap Sort
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 0.001176136
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.005282132
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.022559931
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.415967909
+
+Already Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 8.5333E-5
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 8.69668E-4
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.011779897
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.112485872
+
+Half Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 0.001102019
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.001195886
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.014570783
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.312710469
+
+Modified Merge Sort: 10
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 0.001030338
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.005510337
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.023760693
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.364450976
+
+Already Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 8.3627E-5
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.001129813
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.017593532
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.233434368
+
+Half Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 1.16297E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.002462231
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.019843162
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.363728324
+
+Modified Merge Sort: 50
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 2.28449E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.00308809
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.042219992
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.467617475
+
+Already Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 1.30194E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.001663755
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.023908928
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.459841905
+
+Half Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 1.78713E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.002384212
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.034743332
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.461787259
+
+Modified Merge Sort: 100
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 3.38407E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.004698939
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.060614195
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.609963175
+
+Already Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 1.82369E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.002814292
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.043006034
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.423039601
+
+Half Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 2.65265E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.003759053
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.050640194
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 0.586768608
+
+Modified Merge Sort: 500
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 0.001018392
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.013880803
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.171026224
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 2.376824304
+
+Already Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 6.5341E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.009285727
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.132522862
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 1.618393618
+
+Half Sorted
+
+Is array sorted? true
+Number of elements: 1000
+Time to execute: 8.52358E-4
+
+Is array sorted? true
+Number of elements: 10000
+Time to execute: 0.011387607
+
+Is array sorted? true
+Number of elements: 100000
+Time to execute: 0.185003818
+
+Is array sorted? true
+Number of elements: 1000000
+Time to execute: 2.156579539
+

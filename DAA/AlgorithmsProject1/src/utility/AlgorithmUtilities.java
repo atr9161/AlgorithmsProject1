@@ -1,8 +1,12 @@
 package utility;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class AlgorithmUtilities {
 	public static boolean isSorted(List<Integer> list) {
@@ -19,7 +23,7 @@ public class AlgorithmUtilities {
 		List<Integer> returnList = new ArrayList<>();
 		Random r = new Random();
 		for(int i = 0; i < size; i++) {
-			returnList.add(Math.abs(r.nextInt()));
+			returnList.add(ThreadLocalRandom.current().nextInt(0, 1000000 + 1));
 		}
 		return returnList;
 	}
@@ -29,6 +33,46 @@ public class AlgorithmUtilities {
 	}
 	
 	public static long getCurrentTime() {
-		return System.currentTimeMillis() % 1000;
+		return System.nanoTime();
+	}
+	
+	public static void writeToResults(String outputString) {
+		try 
+		{
+			BufferedWriter writer = new BufferedWriter(new FileWriter("Results.txt",true));
+			writer.append(outputString);
+			writer.newLine();
+			writer.close();
+		} 
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public static void writeNewLine() {
+		try 
+		{
+			BufferedWriter writer = new BufferedWriter(new FileWriter("Results.txt",true));
+			writer.newLine();
+			writer.close();
+		} 
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+	}
+	
+	public static void clearResults() {
+		try 
+		{
+			BufferedWriter writer = new BufferedWriter(new FileWriter("Results.txt"));
+			writer.flush();
+			writer.close();
+		} 
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
 	}
 }

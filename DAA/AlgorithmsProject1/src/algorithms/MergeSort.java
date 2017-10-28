@@ -3,49 +3,80 @@ package algorithms;
 import java.util.ArrayList;
 import java.util.List;
 
-// http://www.vogella.com/tutorials/JavaAlgorithmsMergesort/article.html
+// http://www.codexpedia.com/java/java-merge-sort-implementation/
 public class MergeSort {
 	
-	private ArrayList<Integer> helper;
-	
-	public void sort(List<Integer> list, int p, int r) {
-		helper = new ArrayList<Integer>(list);
-		mergeSort(list,p,r-1);
-	}
-	
-	private void mergeSort(List<Integer> list, int low, int high) {
-		if(low < high) {
-			int middle = low+(high-low) / 2;
-			mergeSort(list,low,middle); //First portion of array
-			mergeSort(list,middle+1,high); //Second portion of array
-			merge(list,low,middle,high);
-		}	
-	}
-	
-	private void merge(List<Integer> list, int low, int middle, int high) {		
-		for(int i = low; i < high; i++) {
-			helper.set(i, list.get(i));
-		}
-		
-		int i = low;
-		int j = middle+1;
-		int k = low;
-		while(i <= middle && j <= high) {
-			if(helper.get(i) <= helper.get(j)) {
-				list.set(k,helper.get(i));
-				i++;
-			}
-			else {
-				list.set(k,helper.get(j));
-				j++;
-			}
-			k++;
-		}
-		
-		while(i <= middle) {
-			list.set(k,helper.get(i));
-			i++;
-			k++;
-		}
-	}
+	private List<Integer> strList;	 
+     
+    public void sort(List<Integer> input) {
+    	strList = input;
+        strList = mergeSort(strList);
+    }
+ 
+    public List<Integer> mergeSort(List<Integer> whole) {
+        List<Integer> left = new ArrayList<Integer>();
+        List<Integer> right = new ArrayList<Integer>();
+        int center;
+ 
+        if (whole.size() == 1) {    
+            return whole;
+        } else {
+            center = whole.size()/2;
+            // copy the left half of whole into the left.
+            for (int i=0; i<center; i++) {
+                    left.add(whole.get(i));
+            }
+ 
+            //copy the right half of whole into the new arraylist.
+            for (int i=center; i<whole.size(); i++) {
+                    right.add(whole.get(i));
+            }
+ 
+            // Sort the left and right halves of the arraylist.
+            left  = mergeSort(left);
+            right = mergeSort(right);
+ 
+            // Merge the results back together.
+            merge(left, right, whole);
+        }
+        return whole;
+    }
+ 
+    private void merge(List<Integer> left, List<Integer> right, List<Integer> whole) {
+        int leftIndex = 0;
+        int rightIndex = 0;
+        int wholeIndex = 0;
+ 
+        // As long as neither the left nor the right ArrayList has
+        // been used up, keep taking the smaller of left.get(leftIndex)
+        // or right.get(rightIndex) and adding it at both.get(bothIndex).
+        while (leftIndex < left.size() && rightIndex < right.size()) {
+            if ( (left.get(leftIndex).compareTo(right.get(rightIndex))) < 0) {
+                whole.set(wholeIndex, left.get(leftIndex));
+                leftIndex++;
+            } else {
+                whole.set(wholeIndex, right.get(rightIndex));
+                rightIndex++;
+            }
+            wholeIndex++;
+        }
+ 
+        List<Integer> rest;
+        int restIndex;
+        if (leftIndex >= left.size()) {
+            // The left ArrayList has been use up...
+            rest = right;
+            restIndex = rightIndex;
+        } else {
+            // The right ArrayList has been used up...
+            rest = left;
+            restIndex = leftIndex;
+        }
+ 
+        // Copy the rest of whichever ArrayList (left or right) was not used up.
+        for (int i=restIndex; i<rest.size(); i++) {
+            whole.set(wholeIndex, rest.get(i));
+            wholeIndex++;
+        }
+    }
 }
