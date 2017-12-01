@@ -1,10 +1,19 @@
 package algorithms;
 
+import java.util.Collections;
 import java.util.List;
 //Adapted from the Hoare partition scheme at: https://en.wikipedia.org/wiki/Quicksort
 public class QuickSort {
+	private boolean shuffle = false;
+	
+	public QuickSort(boolean shuffle) {
+		this.shuffle = shuffle;
+	}
 
 	public void sort(List<Integer> A) {
+		if(shuffle) {
+			Collections.shuffle(A);
+		}
 		quicksort(A, 0, A.size() - 1);
 	}
 
